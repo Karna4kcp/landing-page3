@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className=" md:max-w-[1480px] max-w-[680px] m-auto w-full h-full flex justify-between items-center px-4 md:px-16">
         <img src={logo} className="h-6 cursor-pointer" />
         <div className="hidden md:flex items-center">
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 font-semibold">
             <li className="cursor-pointer hover:text-green-600">Home</li>
             <li className="cursor-pointer hover:text-green-600">About</li>
             <li className="cursor-pointer hover:text-green-600">Support</li>
@@ -27,7 +27,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="md:hidden" onClick={handleClick}>
-          <img src={toggle ? close : hamburgerMenu} />
+          <img src={toggle ? close : hamburgerMenu}/>
         </div>
 
         <div
@@ -38,19 +38,19 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer">
+            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer mr-2">
               Home
             </li>
-            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer">
+            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer mr-2">
               About
             </li>
-            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer">
+            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer mr-2">
               Support
             </li>
-            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer">
+            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer mr-2">
               Platform
             </li>
-            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer">
+            <li className="p-4 hover:bg-gray-100 text-center cursor-pointer mr-2">
               Pricing
             </li>
             <div className="flex flex-col my-4 gap-4">
